@@ -2,11 +2,13 @@
 
 namespace App\Services;
 
-use App\Interfaces\ProviderInterface;
+use App\Interfaces\ProductProviderInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
-class ProviderService implements ProviderInterface
+class ProductProviderService implements ProductProviderInterface
 {
     protected string $urlFormat;
 
